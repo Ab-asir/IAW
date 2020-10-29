@@ -1,14 +1,18 @@
 <html>
 
-<head></head>
+<head>
+  <title>Mi primera vez en php</title>
+</head>
 
 <body>
   <?php
-  $dia = date("d");
-  if ($dia <= 10) {
-    echo "sitio activo";
+  $num = rand(1,100);
+  echo $num;
+  echo "<br>";
+  if ($num <= 50) {
+    echo "El numero es menor o igual a 50.";
   } else {
-    echo "sitio fuera de servicio";
+    echo "El numero es mayor que 50.";
   }
   ?>
 </body>
