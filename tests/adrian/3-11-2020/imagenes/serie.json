@@ -1,0 +1,20 @@
+{
+    "serie" : [
+        ´{
+        "nombre_serie" : "Aida",
+        "argumento" : "La serie comienza cuando Aída García, trabajadora de limpieza divorciada, exalcohólica y sin estudios, regresa a su barrio obrero de toda la vida, Esperanza Sur, cuando su padre, recién fallecido, le deja en herencia la vivienda familiar. Aída se instala en el hogar con sus dos hijos pequeños, Lorena y Jonathan, y deberá además compartirlo con su madre Eugenia, antigua vedette de revista y su hermano Luisma, exdrogadicto. Allí se reencuentra con viejos conocidos de su juventud, como Paz Bermejo, su vecina que ahora ejerce prostitución, Mauricio Colmenero dueño del Bar Reinols o Chema Martínez, que regenta tienda de ultramarinos y vive con su hijo Fidel Durante la sexta temporada de la serie, Aída entra en prisión y abandona la serie; en su lugar entra Soraya, su hija mayor, que había desaparecido hacía años, que se traslada al hogar familiar con su hija Aidita.",
+        "temporadas" : "10",
+        "reparto" : [
+            ´{
+            "actor" : "Marisol Ayuso",
+            "personaje" : "Eugenia Garcia",
+            "actor" : "Eduardo Casanova",
+            "personaje" : "Fidel Martinez",
+            "actor" : "David Castillo",
+            "personaje" : "Jonathan Garcia",
+            "actor" : "Miren Ibarguren",
+            "personaje" : "Soraya Garcia",
+        }
+     ]
+    }
+    ]

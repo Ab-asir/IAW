@@ -1,18 +1,39 @@
 <html>
 
 <head>
-    <h1>Presentacion personal</h1>
+    <style>
+        body{
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        p{
+            font-family: verdana;
+            font-size: 15px;
+            color: white;
+        }
+        form{
+            border: red 5px solid;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Presentacion personal</h1>
+    <br>
   <?php
   $Nombre = "Adrian";
   $Apellidos = "Burgos Sastre"; 
-  $edad ="19"; 
-  $foto_url =; 
+  $edad ="19";
+  $foto_url="C:\xampp\htdocs\IAW\tests\adrian\3-11-2020\imagenes\foto.jpeg.jpg";
+ 
   echo "<p>Nombre : $Nombre</p>";
   echo "<p>Apellidos : $Apellidos</p>";
-  echo "<p>Edad : $Edad</p>";
+  echo "<p>Edad : $edad</p>";
+  echo "<p>Foto : $foto_url</p>";
 
 
   ?>
