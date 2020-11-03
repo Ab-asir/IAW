@@ -28,12 +28,14 @@
   $Nombre = "Adrian";
   $Apellidos = "Burgos Sastre"; 
   $edad ="19";
-  $foto_url="C:\xampp\htdocs\IAW\tests\adrian\3-11-2020\imagenes\foto.jpeg.jpg";
+  $estudios = "bachiller de ciencias";
+  $foto_url="<img src= https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwJDInaXCz5C2ahev7Lqg-dOW1gsT7Lvmk6A&usqp=CAU>";
  
   echo "<p>Nombre : $Nombre</p>";
   echo "<p>Apellidos : $Apellidos</p>";
   echo "<p>Edad : $edad</p>";
-  echo "<p>Foto : $foto_url</p>";
+  echo "<p>Estudios: $estudios</p>";
+  echo "<p> $foto_url</p>";
 
 
   ?>
@@ -41,7 +43,7 @@
   <p>Nº de telefono: <input type="number" name="telefono" min="9"></p>
   <p>Correo electronico: <input type="email" name="correo" size="40"></p>
   <p>
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar">Enviarrrrr
     <input type="reset" value="Borrar">
   </p>
 </form>
