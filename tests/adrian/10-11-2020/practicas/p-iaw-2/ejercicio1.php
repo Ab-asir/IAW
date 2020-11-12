@@ -20,10 +20,10 @@
                     </select></br>
                     <br>
             <b>Instalaciones:</b> 
-                    <input type="checkbox" name="extra[]" value="Barras">Barras
-                    <input type="checkbox" name="extra[]" value="Escenarios">Escenarios
-                    <input type="checkbox" name="extra[]" value="Jardin">Jardin
-                    <input type="checkbox" name="extra[]" value="Zona chill">Zona chill</br>
+                    <input type="checkbox" name="espacios[]" value="Barras">Barras
+                    <input type="checkbox" name="espacios[]" value="Escenarios">Escenarios
+                    <input type="checkbox" name="espacios[]" value="Jardin">Jardin
+                    <input type="checkbox" name="espacios[]" value="Zona chill">Zona chill</br>
                     <br>
                     <b>Comentarios</b><br><textarea name="comentarios" cols="60" rows="10"></textarea><br>
                     <br>
