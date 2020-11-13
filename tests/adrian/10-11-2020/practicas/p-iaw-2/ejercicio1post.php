@@ -3,7 +3,7 @@
         <?php
             echo "El nombre de la fiesta es: ".$_POST['nombre']. "<br>";
             echo "Numero de personas : ".$_POST['numero']. "<br>";
-            echo "La fiesta es: ".$_POST['nombre']. "<br>";
+            echo "La fiesta es: ".$_POST['fiesta']. "<br>";
             echo "Tipo de musica: ".$_POST['musica']. "<br>";
 
             if(isset ($_POST['espacios'])){
