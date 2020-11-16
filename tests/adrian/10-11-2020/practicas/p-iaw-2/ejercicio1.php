@@ -25,7 +25,7 @@
                     <input type="checkbox" name="espacios[]" value="Jardin">Jardin
                     <input type="checkbox" name="espacios[]" value="Zona chill">Zona chill</br>
                     <br>
-                    <b>Comentarios</b><br><textarea name="comentarios" cols="60" rows="10"></textarea><br>
+            <b>Comentarios</b><br><textarea name="comentarios" cols="60" rows="10"></textarea><br>
                     <br>
                     <input type="submit" value="Enviar">    
         </form>        
