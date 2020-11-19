@@ -12,20 +12,20 @@
                 if($_POST['nombre'] == ""){
                     $errores['nombre'] = "El nombre de la fiesta es requerido";
                   }
-                if($_POST['espacios'] == ""){
+                if(isset($_POST['espacios'] == "")){
                     $errores['nombre'] = "El nombre de la fiesta es requerido";
                   }
             }
-            
+            var_dump($errores);die;
 
             if(count($errores) == 0 && (isset($_POST['enviar']))){
         ?>
         <h1>Resultado del formulario</h1>
-
             <table>
                     <tr>
                         <td>Nombre de la fiesta</td>
-                        <td><?php echo $_POST['nombre'] ?></td>
+                        <td><?php echo $_POST['nombre']?></td>
+                        <td><?php echo $errores['nombre']?></td>
                     </tr>
                 <br>
                     <tr>
