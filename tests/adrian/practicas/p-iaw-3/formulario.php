@@ -6,6 +6,7 @@
         <?php
             // GESTION DE ERRORES
             $errores = [];
+            
 
             if(isset($_POST['enviar'])){
 
