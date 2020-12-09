@@ -2,8 +2,8 @@
     <body>
         <h1>Formulario-Calculadora</h1>
         <form action="calculadora.php" method="POST"  enctype="multipart/form-data">
-           Numero 1 <input type="number" name="input_a"><br>
-           Numero 2 <input type="number" name="input_b"><br>
+           Numero 1 <input type="number" name="input_a" required="required"><br>
+           Numero 2 <input type="number" name="input_b" required="required"><br>
                     <input type="submit" name="sumar" value="sumar">
                     <input type="submit" name="restar" value="restar">
                     <input type="submit" name="multiplicar" value="multiplicar">
