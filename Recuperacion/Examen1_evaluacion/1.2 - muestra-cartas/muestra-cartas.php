@@ -21,14 +21,29 @@
 <body>
   <h1>Muestra cartas</h1>
 
+  <form action="muestra-cartas.php" method="POST"> 
+    Eliga un numero de cartas (3 y 12)<input type="number" name="cantidad"><br>
+    Enviar<input type="submit" name="enviar">
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if (isset($_POST['enviar'])){
 
+$cantidad = $_POST['cantidad'];
+$palos = ["d", "c", "t", "p"];
+
+
+}
 ?>
-
+<?php
+  for ($i = 1; $i <= $cantidad $i++) { 
+    $palosacado = $palos [rand(0, 3)];
+    $carta = rand(1, 10);
+    echo '<img src="img/'.$palosacado.$carta.'.svg" alt="8" width="100">';
+  }
+?>
   <footer>
     <p>Escriba aquí su nombre</p>
   </footer>
+  </form>
 </body>
 </html>
