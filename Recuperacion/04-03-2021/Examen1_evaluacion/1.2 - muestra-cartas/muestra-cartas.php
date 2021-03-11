@@ -25,15 +25,12 @@
     Eliga un numero de cartas (3 y 12)<input type="number" name="cantidad"><br>
     Enviar<input type="submit" name="enviar">
 <?php
-if (isset($_POST['enviar'])){
-  $cantidad = $_POST['cantidad'];
+$cantidad = rand(3, 12);
 for ($i=0; $i < $cantidad ; $i++) {
   $carta = rand(1, 10); 
   $palos = ["d", "c", "t", "p"];
   $palosacado = $palos [rand(0, 3)];
-  echo "<img src='img/".$palosacado.$carta.".svg'>";
-}
-
+  echo "<img style='width:150px' src='img/".$palosacado.$carta.".svg'>";
 }
 $palonombre = [];
 $palonombre ["c"] = "Corazones";
@@ -46,6 +43,8 @@ foreach ($palonombre as $key => $value) {
 }
 echo "</ul>";
 ?>
+
+
 
   <footer>
     <p>Adrian Burgos</p>
