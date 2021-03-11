@@ -23,12 +23,30 @@ print "<!-- Ejercicio incompleto -->\n";
 
 <body>
   <h1>Tirada de dados</h1>
+  
 <?php
 
-print "    <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$dado1 = rand(1, 6);
+$dado2 = rand(1, 6);
+$dado3 = rand(1, 6);
+$dado4 = rand(1, 6);
+$dado5 = rand(1, 6);
 
+$total = $dado1 + $dado2 +$dado3 + $dado4 +$dado5;
 ?>
+<p>
+            <img src=<?php echo "img/".$dado1.".svg";?> alt="4" width="140" height="140">
+            <img src=<?php echo "img/".$dado2.".svg";?> alt="4" width="140" height="140">
+            <img src=<?php echo "img/".$dado3.".svg";?> alt="4" width="140" height="140">
+            <img src=<?php echo "img/".$dado4.".svg";?> alt="4" width="140" height="140">
+            <img src=<?php echo "img/".$dado5.".svg";?> alt="4" width="140" height="140">
+</p>
 
+<?php
+echo "<b>total</b> = " .$total."<br>";
+echo "<br>";
+echo "<a href='tirada-dados-1.php'>Volver a tirar</a>";
+?>
 
 <footer>
   <p>Escriba aquí su nombre</p>
