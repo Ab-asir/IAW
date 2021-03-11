@@ -48,7 +48,7 @@ echo "</ul>";
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Burgos</p>
   </footer>
   </form>
 </body>
