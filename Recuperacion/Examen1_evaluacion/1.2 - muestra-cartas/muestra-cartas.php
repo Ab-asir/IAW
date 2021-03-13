@@ -21,35 +21,39 @@
 <body>
   <h1>Muestra cartas</h1>
 
-  <form action="muestra-cartas.php" method="POST"> 
-    Eliga un numero de cartas (3 y 12)<input type="number" name="cantidad"><br>
-    Enviar<input type="submit" name="enviar">
 <?php
-if (isset($_POST['enviar'])){
-  $cantidad = $_POST['cantidad'];
+  $cantidad = rand(3,12);
+  $c = 0;
+  $d = 0;
+  $p = 0;
+  $t = 0;
+
 for ($i=0; $i < $cantidad ; $i++) {
+  
   $carta = rand(1, 10); 
   $palos = ["d", "c", "t", "p"];
   $palosacado = $palos [rand(0, 3)];
-  echo "<img src='img/".$palosacado.$carta.".svg'>";
+  echo "<img style='width:150px' src='img/".$palosacado.$carta.".svg'>";
+  if ($palosacado == "c"){
+    $c = $c +1;
+  } elseif ($palosacado == "d") {
+    $d = $d +1;
+  }elseif ($palosacado == "t") {
+    $t = $t +1;
+  }elseif ($palosacado == "p") {
+    $p = $p +1;
+  }
 }
-
-}
-$palonombre = [];
-$palonombre ["c"] = "Corazones";
-$palonombre ["d"] = "Diamantes";
-$palonombre ["p"] = "Picas";
-$palonombre ["t"] = "Treboles";
 echo "<ul>";
-foreach ($palonombre as $key => $value) {
-  echo "<li>".$value."</li>";
-}
+  echo "<li> Corazones: ".$c."</li>";
+  echo "<li> Diamantes: ".$d."</li>";
+  echo "<li> Picas: ".$p."</li>";
+  echo "<li> Treboles: ".$t."</li>";
 echo "</ul>";
 ?>
-
   <footer>
     <p>Adrian Burgos</p>
   </footer>
-  </form>
+
 </body>
 </html>
